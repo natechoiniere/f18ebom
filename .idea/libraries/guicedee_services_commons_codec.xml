@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="guicedee.services.commons.codec" type="repository">
+    <properties maven-id="com.guicedee.services:commons-codec:1.0.6.3-jre14" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/guicedee/services/commons-codec/1.0.6.3-jre14/commons-codec-1.0.6.3-jre14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
