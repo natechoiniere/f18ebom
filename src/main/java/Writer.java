@@ -1,7 +1,6 @@
-import org.apache.poi.ss.formula.functions.Column;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.util.CellUtil;
+import org.apache.poi.util.IOUtils;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -34,6 +33,7 @@ public class Writer {
             XSSFWorkbook workbook = new XSSFWorkbook();
             XSSFSheet sheet = workbook.createSheet("Sheet1");
             FileInputStream file = new FileInputStream(new File(filepath));
+            IOUtils.setByteArrayMaxOverride(500000000);
             XSSFWorkbook oldBook = new XSSFWorkbook(file);
             XSSFSheet oldSheet = oldBook.getSheetAt(0);
 
